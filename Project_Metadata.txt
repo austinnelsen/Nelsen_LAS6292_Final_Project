@@ -1,0 +1,111 @@
+Class I. Data set descriptors
+
+A. Data set identity: Image Data Extraction and Organization for Textual Analysis of Historical Sources
+
+B. Data set identification code: Not yet assigned, see data management plan: data sharing section
+
+C. Data set description
+
+1. Originator(s) : Austin Nelsen, Department of History, University of Florida austinnelsen@ufl.edu
+
+2. Abstract: This project seeks to leverage the powerful tools of data management in preparation for a future work of textual analysis of 17th century colonial administrative documents held by the Arquivo Histórico Ultramarino in an effort to better understand Palmares, a maroon community founded in colonial Brazil by runaway slaves. Since these formerly-enslaved peoples left behind no documents of their own, and reading colonial documents to understand anti-colonial societies such as Palmares presents its own challenges, innovative strategies are needed in order to overcome a lack of traditional historical sources. Additionally, this project hopes to serve as an example of new methods and outcomes made possible through the intersection of traditional archival research and the tools of the digital humanities. In accomplishing both of these aims, this project offers a unique opportunity to demonstrate how emerging technology may help historians find new answers to old questions.  
+
+D. Key words: Digital Humanities, archival data extraction, metadata organization, maroon communities,
+
+Class II. Research origin descriptors
+
+A. Overall project description
+
+1. Identity: Image Data Extraction and Organization for Textual Analysis of Historical Sources
+
+2. Originator(s): Austin Nelsen, Department of History, University of Florida austinnelsen@ufl.edu
+
+3. Period of study: 01/01/2021 to 30/04/2021
+
+4. Objectives: extraction of relevant historical data from photos of archival records in preparation for computational analysis of textual corpus
+
+5. Abstract: This project seeks to leverage the powerful tools of data management in preparation for a future work of textual analysis of 17th century colonial administrative documents held by the Arquivo Histórico Ultramarino in an effort to better understand Palmares, a maroon community founded in colonial Brazil by runaway slaves. Since these formerly-enslaved peoples left behind no documents of their own, and reading colonial documents to understand anti-colonial societies such as Palmares presents its own challenges, innovative strategies are needed in order to overcome a lack of traditional historical sources. Additionally, this project hopes to serve as an example of new methods and outcomes made possible through the intersection of traditional archival research and the tools of the digital humanities. In accomplishing both of these aims, this project offers a unique opportunity to demonstrate how emerging technology may help historians find new answers to old questions. 
+
+B. Specific subproject description
+
+1. Site description
+
+a. Archive: Arquivo Histórico Ultramarino (hereafter abbreviated AHU) 
+
+b. Location: Lisbon, Portugal
+
+c. Collection: Fundo Conselho Ultramarino (hereafter abbreviated Fundo CU)
+
+d. Fonds: Série 001 Angola, Série 015 Pernambuco 
+
+2. Research methods
+
+a. Field/laboratory: Photos of documents were taken indoors under fluorescent lighting from a distance of between 1 and 2 feet. Photos were stored on a standard SD card, transferred to local storage on macbook solid state drive. Data was then copied to a Toshiba Canvio 1 terabyte external hard drive for long-term, off-site storage, and finally uploaded to Google Drive cloud service. A zipped copy of the Google Drive folder was extracted onto a PC running Windows 10 for data use in Tropy v1.9.0. OCR extraction was accomplished on the same PC through RStudio v1.4.1103 using the Tesseract and Tidyverse libraries. See included RStudio .rproj file as well as .json file containing metadata exported from Tropy. Transcription text data was created using Otter.ai transcription software which transcribed the author’s verbal reading of archival documents into text. Quality control of transcription data was accomplished by importing text output from Otter.ai’s transcription into Microsoft Word 365 which was then used to render Otter.ai’s text back into audio. The resulting audio was compared in real time to the original images of the archival document used for the initial transcription.
+
+b. Instrumentation: Canon PowerShot ELPH180 PC2275
+
+c. Legal/organizational requirements: Text of archival documents are considered to be part of the public domain under Código do Direito de
+Autor e dos Direitos Conexos, aprovado pelo Decreto -Lei n.º 63/85, de 14 de março. Photos of archival documents are governed by Decreto -Lei
+n.º 31/2019, de 3 de maio, which allows researchers to take digital photos of archival documents for personal or academic use. Any other use, including any publication of photos of archival documents requires prior authorization from the Direção-Geral do Livro, dos Arquivos e das Bibliotecas. See Despacho n.º 6852/2015 de 19 de junho for additional information on authorized uses of images of archival documents. With the exception of the documents from AHU Fundo CU, Série 001 Angola collection, digitized versions of these documents are available for consultation online as part of Projecto Resgate of the Brazilian National Library. The entirety of the AHU Fundo CU, Série 015 Pernambuco collection can currently be found at: http://resgate.bn.br/docreader/DocReader.aspx?bib=015_PE&pagfis=1.
+
+3. Project personnel: Austin Nelsen Department of History University of Florida austinnelsen@ufl.edu
+
+Class III. Data set status and accessibility
+
+A. Status
+
+1. Latest update: 30/04/2021
+
+2. Latest archive date: 30/04/2021
+
+3. Metadata status: 30/04/2021 Current
+
+4. Data verification: Data quality checks successful
+
+B. Accessibility
+
+1. Storage location and medium: All data will be stored in three forms: external hard drive in off-site storage, local hard drive, cloud
+storage (Google Drive).
+
+2. Contact person(s) : Austin Nelsen Department of History University of Florida austinnelsen@ufl.edu
+
+3. Copyright restrictions: Copyright restrictions prevent the publication of dataset consisting of images of archival documents.
+
+4. Citation: Austin Nelsen “Image Data Extraction and Organization for Textual Analysis of Historical Sources” unpublished manuscript, 2021.
+
+5. Costs: None
+
+Class IV. Data structural descriptors
+
+A. Data set files
+
+1. Identity: In addition to this metadata text file the project includes five additional files:
+
+a. Data Management Plan: DMP_Image_Data_Extraction_and_Organization_for_Textual_Analysis_of_Historical_Sources.pdf
+
+b. RStudio Project file including dataset of raw images for OCR extraction and R code required for OCR extraction. (images are subject to publication restrictions, for the personal academic use of Dr. Emilio Bruna only): Nelsen_LAS6292_Final_Project.RProj
+
+c. Dataset of all raw text extracted from archival document images: Corpus_of_Text_Transcribed_from_Documents.txt
+
+d. Metadata exported from Tropy software: Tropy_Metadata.json
+
+1. Photos within Tropy are grouped together at the document level, which may consist of anywhere between 1 and 30 pages in a single document. As such, image files within Tropy utilize a naming convention that identifies the image as belonging to a certain document, followed by a value indicating that image’s appropriate place within the order of the document’s images. For example, the image designated as “AHU_ACL_CU_015_Cx_10_D_917_3” communicates to the reader that the official archive designation for this document is AHU_ACL_CU_015_Cx_10_D_917 and that this image is the third image in the set of photos that depict that document. A value of “C” rather than a numerical value at the end of the filename indicates that the file is an image showing the preservation cover used by the archive to house and protect the manuscript. “C” photos not only help bookend where one document ends and the next begins, but also show important archival information including a summary of the enclosed document. “C” photos were the source of the OCR-extracted summaries found as notes on each document within Tropy. All other Tropy data categories and naming conventions are self-explanatory and unlikely to require additional explanation.
+
+e. RStudio code used for automated OCR: Nelsen_LAS6292_Final_Project.RProj.rproj
+
+Class V. Supplemental descriptors
+
+A. Quality assurance/quality control procedures: Quality control of transcription data was accomplished by importing text output from Otter.ai’s transcription into Microsoft Word 365 which was then used to render Otter.ai’s text back into audio. The resulting audio was compared in real time to the original images of the archival document used for the initial transcription. Only minor errors were found and were corrected before proceeding. Quality control of metadata entered into Tropy, including data produced by automated OCR in RStudio, was verified for accuracy by a third party. 
+
+B. Computer programs and data-processing algorithms: Tropy v1.9.0, RStudio v1.4.1103. Web-based software: Otter.ai, Microsoft Office 365 (Word).
+
+C. Archiving
+
+1. Archival procedures: All data is stored in three forms: external hard drive in off-site storage, local hard drive, cloud storage (Google Drive). Across all three storage locations access requires either physical access to secure areas or single sign on (SSO) authorization utilizing robust security including two-factor authentication. The data itself is legally considered as public domain data, and as such, represent a very low risk if accessed and disseminated without authorization.
+
+2. Review history: Final review was conducted by Austin Nelsen on 30/04/2021.
+
+
+REFERENCES
+
+William K. Michener, James W. Brunt, John J. Helly, Thomas B. Kirchner and Susan G. Stafford. “Nongeospatial Metadata for the Ecological Sciences” Ecological Applications: 7:2 (February 1997) 330-342.
